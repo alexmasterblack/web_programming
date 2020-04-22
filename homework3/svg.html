@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>alexmasterblack</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/373c26e12c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="main.html">alexmasterblack</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="fas fa-clone fa-lg"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="info.html">info</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-target="#modal" data-toggle="modal" href="#">gallery</a>
+                            <div class="modal fade" id="modal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title"><i class="fas fa-exclamation-triangle"></i> Ошибка!</h4>
+                                        <button type="button" class="close" data-dismiss="modal">×</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Упс, что-то пошло не так...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                                    </div>
+                                </div>
+                            </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="#">something else</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown">
+                            <a class="dropdown-item dropdown-toggle" href="#">tasks</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="svg.html">svg</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="formula.html">формулы</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<hr>
+</div>
+
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="main.html" class="act">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">SVG</li>
+        </ol>
+    </nav>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="media">
+                <img src="svg.png" class="size-img">
+                    <div class="media-body">
+                        <h5>SVG</h5>
+                        <strong>SVG</strong> (от англ. <strong><i>Scalable Vector Graphics</i></strong> — масштабируемая векторная графика) — язык разметки масштабируемой векторной графики, 
+                        входящий в подмножество расширяемого языка разметки XML, 
+                        предназначен для описания двумерной векторной и смешанной векторно/растровой графики в формате XML.
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <p>
+        <a class="btn btn-secondary" data-toggle="collapse" href="#click_one" role="button" aria-expanded="false" aria-controls="click_one">Возможности языка <span class="badge badge-light">1</span></a>
+        <a class="btn btn-secondary" data-toggle="collapse" href="#click_two" role="button" aria-expanded="false" aria-controls="click_two">Достоинства формата <span class="badge badge-light">2</span></a>
+    </p>
+    <div class="row">
+        <div class="col-6">
+            <div class="collapse multi-collapse" id="click_one">
+                <div class="card card-body">
+                    <ul class="sup">
+                        <li>
+                            Описание основных геометрических фигур.
+                        </li>
+                        <li>
+                            Широкий спектр визуальных свойств, которые можно применить к фигурам и путям.
+                        </li>
+                        <li>
+                            Интерактивность. На каждый отдельный элемент и на целое изображение можно повесить обработчик событий, таким образом, пользователь может управлять рисунком.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="collapse multi-collapse" id="click_two">
+                <div class="card card-body">
+                    <ul class="sup">
+                        <li>
+                            Текстовый формат — файлы SVG можно читать и редактировать при помощи обычных текстовых редакторов.
+                        </li>
+                        <li>
+                            Масштабируемость — SVG является векторным форматом.
+                        </li>
+                        <li>
+                            Текст в графике SVG является текстом, а не изображением, поэтому его можно выделять и копировать.
+                        </li>
+                        <li>
+                            Широко доступно использование растровой графики.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <h4>Пример</h4>
+            <center>
+                <br>
+                <svg width="250" height="210">
+                    <rect x="0" y="0" width="250" height="210" fill="#8b8b8b" stroke="black" stroke-width="8" />
+                    <rect  x="0" y="0" width="20" rx="5" height="20"></rect>
+                    <rect  x="229" y="0" width="20" rx="5" height="20"></rect>
+                    <rect  x="229" y="190" width="20" rx="5" height="20"></rect>
+                    <rect  x="0" y="190" width="20" rx="5" height="20"></rect>
+                    <circle r="40" cx="55" cy="60"/>
+                    <circle r="40" cx="190" cy="60"/>
+                    <circle r="67" cx="122" cy="125"/>
+                    <circle r="10" cx="122" cy="125" fill="white"/>
+                    <circle r="5" cx="150" cy="100" fill="white"/>
+                    <circle r="5" cx="94" cy="100" fill="white"/>
+                </svg>
+            </center>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <hr>
+        <p>&copy; 2020 alexmasterblack</p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>alexmasterblack</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/373c26e12c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="main.html">alexmasterblack</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="fas fa-clone fa-lg"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="info.html">info</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-target="#modal" data-toggle="modal" href="#">gallery</a>
+                            <div class="modal fade" id="modal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title"><i class="fas fa-exclamation-triangle"></i> Ошибка!</h4>
+                                        <button type="button" class="close" data-dismiss="modal">×</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Упс, что-то пошло не так...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                                    </div>
+                                </div>
+                            </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="#">something else</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown">
+                            <a class="dropdown-item dropdown-toggle" href="#">tasks</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="svg.html">svg</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="formula.html">формулы</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<hr>
+</div>
+
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="main.html" class="act">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Информация</li>
+        </ol>
+    </nav>
+</div>
+
+<div class="container">
+    <div id="click" class="carousel slide" data-ride="carousel" class="border-0">
+
+        <ul class="carousel-indicators">
+          <li data-target="#click" data-slide-to="0" class="active"></li>
+          <li data-target="#click" data-slide-to="1"></li>
+          <li data-target="#click" data-slide-to="2"></li>
+        </ul>
+        
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="1.jpg">
+            </div>
+            <div class="carousel-item">
+                <img src="2.jpg">
+            </div>
+            <div class="carousel-item">
+                <img src="3.jpg">
+            </div>
+        </div>
+        
+        <a class="carousel-control-prev" href="#click" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#click" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+</div>
+
+<div class="container">
+<br>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link main-tab active" data-toggle="tab" href="#rose">Розa</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link color-tab" data-toggle="tab" href="#lotos">Лотос</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link color-tab" data-toggle="tab" href="#gib">Гибискус</a>
+        </li>
+    </ul>
+  
+    <div class="tab-content">
+        <div id="rose" class="container tab-pane active">
+            <br>
+            <h3>Розы</h3>
+            <div class="row">
+                <div class="col-12">
+                    <div class="media">
+                        <img class="size-img rounded" src="rosamedia.jfif">
+                        <div class="media-body">
+                            <strong>Роза</strong> — собирательное название видов и <a  class="help" href="#" data-toggle="tooltip" data-placement="bottom" title="Сорт — группа культурных растений, полученная в результате селекции.">сортов</a> представителей рода Шиповник (лат. <i>Rósa</i>), выращиваемых человеком.
+                            Большая часть сортов роз получена в результате длительной селекции путём многократных повторных скрещиваний и отбора.
+                            Некоторые сорта являются формами дикорастущих видов.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th>Название</th>
+                            <th>Размер</th>
+                            <th>Внешний вид</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Помпонелла (Pomponella)</td>
+                            <td>Кустарник небольшого размера, его побеги вырастают на длину 1,5 метра</td>
+                            <td>Цветки очень необычной формы, закрытые и округлые, похожи на помпон.
+                            Цвет таких бутонов ярко-розовый, также многие садоводы отмечают наличие яркого аромата
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Фламентанц (Flammentanz)</td>
+                            <td>Кустарник вырастает до 3-х метров в длину и 2-х в ширину</td>
+                            <td>Бутоны окрашены в яркий, красный цвет, обладают махровой текстурой, большим размером и приятным ароматом</td>
+                          </tr>
+                          <tr>
+                            <td>Голден Гейт (Golden Gate)</td>
+                            <td>Кустарник вырастает до 3,5 метров в высоту, характеризуется большим количеством побегов</td>
+                            <td>Бутоны ярко-желтого цвета, достаточно крупного размера, текстура лепестков махровая</td>
+                          </tr>
+                          <tr>
+                            <td>Айсберг (Iceberg)</td>
+                            <td>Кустарник небольшой, всего лишь 1,5 метра в высоту полностью усыпан белоснежными цветами</td>
+                            <td>Бутоны среднего размера, классической формы, отличаются наличием тонкого аромата</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+        <div id="lotos" class="container tab-pane fade"><br>
+            <h3>Лотос</h3>
+            <div class="row">
+                <div class="col-12">
+                    <div class="media">
+                        <img class="size-img rounded" src="lotosmedia.jpg">
+                        <div class="media-body">
+                            <strong>Лотос</strong> (лат. <i>Nelúmbo</i>) — <a class="help" href="#" data-toggle="tooltip" data-placement="bottom" title="Род — один из основных рангов иерархической классификации в биологической систематике.">род</a> двудольных растений, единственный представитель семейства Лотосовые (лат. <i>Nelumbonaceae</i>).
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th>Название</th>
+                            <th>Распространение</th>
+                            <th>Внешний вид</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Лотос орехоносный</td>
+                            <td>Дальний Восток России, Филиппинские острова, Шри-Ланка, Китай, Индия</td>
+                            <td>Растение имеет крупные щитовидные листья, возвышающиеся над водой, 
+                                снизу бледно-зеленого цвета, а сверху темно-зеленого, сам цветок розового оттенка
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Лотос жёлтый</td>
+                            <td>Гавайские острова, Северная Америка</td>
+                            <td>Данный вид практически не отличается от лотоса орехоносного, разве что окраской цветков и длительностью цветения. 
+                                У этого растения цветки имеют яркий желтый цвет, раскрываются на восходе солнца в мае, а уже к полудню складываются в бутоны
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Лотос каспийский</td>
+                            <td>Африка, Америка</td>
+                            <td>Цветки имеют яркий розовый цвет</td>
+                          </tr>
+                          <tr>
+                            <td>Лотос Комарова</td>
+                            <td>Дальний Восток России</td>
+                            <td>Как и лотос орехоносный, цветки обладают приятным розовым цветом</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+        <div id="gib" class="container tab-pane fade"><br>
+            <h3>Гибискус</h3>
+            <div class="row">
+                <div class="col-12">
+                    <div class="media">
+                        <img class="size-img rounded" src="gibmedia.jpg">
+                        <div class="media-body">
+                            <strong>Гиби́скус</strong> (лат. <i>Hibiscus</i>) — обширный род растений <a class="help" href="#" data-toggle="tooltip" data-placement="bottom" title="Семе́йство — один из основных рангов иерархической классификации в биологической систематике.">семейства</a> Мальвовые (<i>Malvaceae</i>). 
+                                Дикие и окультуренные растения. В основном кустарники и деревья. Встречаются также многолетние и однолетние травы.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th>Название</th>
+                            <th>Размер</th>
+                            <th>Внешний вид</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Гибискус тройчатый</td>
+                            <td>Растение достигает высоты 80 см</td>
+                            <td>Цветки имеют бледно-желтый окрас с оригинальной пурпурной серединкой</td>
+                          </tr>
+                          <tr>
+                            <td>Гибискус древовидный</td>
+                            <td>Большие цветы диаметром до 12 см</td>
+                            <td>Распустившиеся бутоны имеют яркую окраску различных оттенков (в зависимости от сорта)</td>
+                          </tr>
+                          <tr>
+                            <td>Китайская роза</td>
+                            <td>Представители этого вида являются вечнозелеными кустарниками с длинными блестящими листьями (до 15 см) и буроватой корой</td>
+                            <td>Различают множество сортов, отличающихся друг от друга размерами, махровостью цветов, их окраской, 
+                                которая представлена белой, желтой, розовой, красной, фиолетовой палитрой со множеством оттенков
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Гибискус изменчивый</td>
+                            <td>Этот вид представляет листопадный кустарник с прямостоячим стволом, достигающий в высоту 3 м</td>
+                            <td>Переменчивый цвет бутонов, сначала они имеют белый окрас, а затем розовый</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <hr>
+        <p>&copy; 2020 alexmasterblack</p>
+    </div>
+</footer>
+
+<script>
+     $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();   
+    });
+</script>
+
+</body>
+</html>

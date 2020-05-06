@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript</title>
+        <link rel="stylesheet" href="style/style.css" type="text/css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="one">
+                <h4>Расчет площади эллипса</h4>
+                <p>
+                    <strong>Эллипс</strong> - замкнутая кривая на плоскости, 
+                    которая может быть получена как пересечение плоскости и кругового цилиндра или как ортогональная проекция 
+                    окружности на плоскость. Окружность является частным случаем эллипса.
+                </p>
+                <img src="style/ellipse.png" width="260px" height="130px">
+                <div>
+                    $$ S = πab $$
+                    <p>\(π\) - число пи</p>
+                    <p>\(a\) - длина большой полуоси</p>
+                    <p>\(b\) - длина малой полуоси</p>
+                </div>
+                <div class="form">
+                    <span>\(a\): </span>
+                    <input type="number" id="a_element">
+                </div>
+                <div class="form">
+                    <span>\(b\): </span>
+                    <input type="number" id="b_element">
+                </div>
+                <input type="button" onclick="button_first()" value="Вычислить">
+                <div class="form">
+                Рeзультат: <span id="result_first"></span>
+                </div>
+                <input type="button" onclick="button_clear_1()" value="Очистить">
+            </div>
+            <div class="two">
+                <h4>Найти сумму</h4>
+                <p>
+                    Найти сумму ряда \(1 + x + x^2/2!+ x^3/3!+ x^4/4!+ ...\) 
+                    Суммирование прекратить, когда абсолютная величина очередного  слагаемого станет меньше \(0,0003\). 
+                    Примечание: \(x < 1\).
+                </p>
+                <div class="form">
+                    <span>\(x\): </span>
+                    <input type="number" id="x_element">
+                </div>
+                <input type="button" onclick="button_second()" value="Вычислить">
+                <div class="form">
+                    Рeзультат: <span id="result_second"></span>
+                </div>
+                <input type="button" onclick="button_clear_2()" value="Очистить">    
+            </div>
+            <div class="three">
+                <h4>Массивы</h4>
+                <p>
+                    Задана матрица А(8,8). Упорядочить элементы в каждой строке в порядке возрастания их значений.
+                </p>
+                <div class="form">
+                    <input class="field" type="number" value="2">
+                    <input class="field" type="number" value="10">
+                    <input class="field" type="number" value="1">
+                    <input class="field" type="number" value="212">
+                    <input class="field" type="number" value="-10">
+                    <input class="field" type="number" value="-1">
+                    <input class="field" type="number" value="8">
+                    <input class="field" type="number" value="0">
+                </div>
+                <div class="form"">
+                    <input class="field" type="number" value="1">
+                    <input class="field" type="number" value="-1">
+                    <input class="field" type="number" value="3">
+                    <input class="field" type="number" value="80">
+                    <input class="field" type="number" value="12">
+                    <input class="field" type="number" value="100">
+                    <input class="field" type="number" value="90">
+                    <input class="field" type="number" value="2">
+                </div>
+                <div class="form">
+                    <input class="field" type="number" value="-12">
+                    <input class="field" type="number" value="11">
+                    <input class="field" type="number" value="1">
+                    <input class="field" type="number" value="234">
+                    <input class="field" type="number" value="6">
+                    <input class="field" type="number" value="-10">
+                    <input class="field" type="number" value="9">
+                    <input class="field" type="number" value="67">
+                </div>
+                <div class="form">
+                    <input class="field" type="number" value="2">
+                    <input class="field" type="number" value="1">
+                    <input class="field" type="number" value="12">
+                    <input class="field" type="number" value="45">
+                    <input class="field" type="number" value="1">
+                    <input class="field" type="number" value="-70">
+                    <input class="field" type="number" value="-91">
+                    <input class="field" type="number" value="0">
+                </div>
+                <div class="form">
+                    <input class="field" type="number" value="11">
+                    <input class="field" type="number" value="56">
+                    <input class="field" type="number" value="12">
+                    <input class="field" type="number" value="89">
+                    <input class="field" type="number" value="-9">
+                    <input class="field" type="number" value="65">
+                    <input class="field" type="number" value="-38">
+                    <input class="field" type="number" value="12">
+                </div>
+                <div class="form">
+                    <input class="field" type="number" value="1">
+                    <input class="field" type="number" value="1">
+                    <input class="field" type="number" value="-9">
+                    <input class="field" type="number" value="13">
+                    <input class="field" type="number" value="56">
+                    <input class="field" type="number" value="-64">
+                    <input class="field" type="number" value="7">
+                    <input class="field" type="number" value="8">
+                </div>
+                <div class="form">
+                    <input class="field" type="number" value="0">
+                    <input class="field" type="number" value="0">
+                    <input class="field" type="number" value="23">
+                    <input class="field" type="number" value="-90">
+                    <input class="field" type="number" value="-67">
+                    <input class="field" type="number" value="-45">
+                    <input class="field" type="number" value="23">
+                    <input class="field" type="number" value="1">
+                </div>
+                <div class="form">
+                    <input class="field" type="number" value="-101">
+                    <input class="field" type="number" value="1">
+                    <input class="field" type="number" value="66">
+                    <input class="field" type="number" value="235">
+                    <input class="field" type="number" value="-19">
+                    <input class="field" type="number" value="5">
+                    <input class="field" type="number" value="23">
+                    <input class="field" type="number" value="11">
+                </div>
+                <div class="form">
+                    <span>\(min\): </span>
+                    <input type="number" id="min" class="range">
+                    <span>\(max\): </span>
+                    <input type="number" id="max" class="range">
+                </div>
+                <input type="button" onclick="button_gen()" value="Сгенерировать">
+                <div class="form">
+                    <input type="button" onclick="button_three()" value="Вычислить">
+                </div>
+            </div>
+            <div class="four">
+                <h4>Функции</h4>
+                <div class="form">
+                    <span>\(n\): </span>
+                    <input type="number" id="n_element" class="range">
+                    <span>\(min\): </span>
+                    <input type="number" id="mini" class="range">
+                    <span>\(max\): </span>
+                    <input type="number" id="maxi" class="range">
+                </div>
+                <div class="form">
+                    <input type="button" onclick="resultArray()" value="Сгенерировать">
+                </div>
+                <center>
+                    <div id="table"></div>
+                </center>
+            </div>
+        </div>
+        <script src="script/script.js"></script>
+        <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </body>
+</html>

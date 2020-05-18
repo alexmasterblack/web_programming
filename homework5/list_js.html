@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script>
+        var blank = [
+            {
+                text: 'Животные',
+                childs: [
+                    {
+                        text: 'Млекопитающие',
+                        childs: [
+                            {
+                                text: 'Коровы',
+                                childs: []
+                            },
+                            {
+                                text: 'Ослы',
+                                childs: []
+                            },
+                            {
+                                text: 'Собаки',
+                                childs: []
+                            },
+                            {
+                                text: 'Тигры',
+                                childs: []
+                            }
+                        ]
+                    },
+                    {
+                        text: 'Другие',
+                        childs: [
+                            {
+                                text: 'Змеи',
+                                childs: []
+                            },
+                            {
+                                text: 'Птицы',
+                                childs: []
+                            },
+                            {
+                                text: 'Ящерицы',
+                                childs: []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                text: 'Рыбы',
+                childs: [
+                    {
+                        text: 'Аквариумные',
+                        childs: [
+                            {
+                                text: 'Гуппи',
+                                childs: []
+                            },
+                            {
+                                text: 'Скалярии',
+                                childs: []
+                            }
+                        ]
+                    },
+                    {
+                        text: 'Морские',
+                        childs: [
+                            {
+                                text: 'Морская форель',
+                                childs: []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ];
+
+        var list = document.body.appendChild(document.createElement('ul')) //создали элемент и добавили его в конец
+
+        function create_list(child, list) {
+            let li = list.appendChild(document.createElement('li'));
+            li.appendChild(document.createTextNode(child.text));
+            if (child.childs != undefined) {
+                let ul = li.appendChild(document.createElement('ul'));
+                for (ch of child.childs) {
+                    create_list(ch, ul);
+                }
+            }
+        }
+
+        for (ch of blank) {
+            create_list(ch, list);
+        }
+
+        function get_info(dct) {
+            for (ch of dct.children) {
+                if (ch.children) {
+                    console.dir(ch)
+                    get_info(ch);
+                }
+            }
+        }
+
+        var dct = document;
+        get_info(dct);
+
+    </script>
+</body>
+
+</html>

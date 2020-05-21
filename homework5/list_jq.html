@@ -94,10 +94,6 @@
                 if (ch.childs != undefined) {
                     li.append(create_list(ch.childs));
                 }
-                li.on('click', function () {
-                    $(this.firstElementChild).slideToggle(800);
-                    return false;
-                })
                 ul.append(li);
             }
             return ul;
@@ -106,8 +102,14 @@
         $('body').append(create_list(blank));
 
         $('li').each(function () {
-            var text = $(this).clone().children('ul').remove().end().text();
-            console.log("Text: " + text + " Count: " + $(this).find('li').length);
+            console.log(
+                $(this).contents()[0],
+                $(this).find('li').length
+            );
+        });
+        $('li').click(function () {
+            $(this).children().slideToggle('slow');
+            return false;
         });
 
     </script>

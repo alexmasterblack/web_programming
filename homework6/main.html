@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>Canvas & Mootools</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mootools/1.6.0/mootools-core.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="init();">
+    <div class="main">
+        <div class="one">
+            <canvas id="canvas" width="930" height="500" onclick="goInput(event);"></canvas>
+            <form>
+                <input type="button" value="Вверх" onclick="move(0)">
+                <input type="button" value="Вниз" onclick="move(1)">
+                <input type="button" value="Влево" onclick="move(2)">
+                <input type="button" value="Вправо" onclick="move(3)">
+                <input type="button" value="Хаос" onclick="move(4)">
+                <input type="button" value="Рандом" onclick="move()">
+                <input type="button" value="Медленно" onclick="slower()">
+                <input type="button" value="Быстро" onclick="faster()">
+                <input type="button" value="Стоп" onclick="stop()">
+                <input id="num" type="number" value="100" min="40" max="700">
+            </form>
+        </div>
+        <div class="two">
+            <p>Инструкция:</p>
+            <p>Вверх - фигуры будут двигаться вверх.</p>
+            <p>Вниз - фигуры будут двигаться вниз.</p>
+            <p>Влево - фигуры будут двигаться влево.</p>
+            <p>Вправо - фигуры будут двигаться вправо</p>
+            <p>Хаос - хаотичное движение.</p>
+            <p>Рандом - вначале движения, каждая фигура выбирает себе направление.</p>
+            <p>Медленно - фигуры будут двигаться медленнее.</p>
+            <p>Быстро - фигуры будут двигаться быстрее.</p>
+            <p>Стоп - все фигуры остановятся.</p>
+        </div>
+    </div>
+</body>
+
+</html>

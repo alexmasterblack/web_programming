@@ -1,0 +1,62 @@
+body {
+    background: rgb(209, 252, 202);
+}
+
+input[type="button"] {
+    background: #8AD47D;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 30;
+    width: 90;
+}
+
+input[type='button']:not(:active) {
+    transform: scale(0.95);
+}
+
+input[type='button']:hover {
+    cursor: pointer;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="number"] {
+    background: white;
+    border: 3px solid #8AD47D;
+    outline: none;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 30;
+    width: 90;
+}
+
+span {
+    color: #8AD47D;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input {
+    margin-top: 10px;
+}
+
+canvas {
+    border-radius: 10px;
+    border: 3px solid #8AD47D;
+}
+
+.main {
+    display: flex;
+}
+
+.two {
+    margin: 10 auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}

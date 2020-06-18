@@ -1,0 +1,114 @@
+body {
+    background-color: #ECCBFB;
+}
+
+canvas {
+    border-radius: 10px;
+    border: 3px solid #8E44AD;
+}
+
+input[type="button"] {
+    background: #8E44AD;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 30;
+    width: 120;
+}
+
+input[type='button']:not(:active) {
+    transform: scale(0.95);
+}
+
+input[type='button']:hover {
+    cursor: pointer;
+}
+
+canvas:hover {
+    cursor: crosshair;
+}
+
+#main {
+    margin-top: 50px;
+    position: absolute;
+    border-radius: 10px;
+    display: flex;
+}
+
+.one {
+    position: relative;
+    margin-left: 50px;
+    width: 900px;
+    height: 600px;
+}
+
+.two {
+    border-radius: 10px;
+    background-color: white;
+    width: 852px;
+    height: 590px;
+    padding-top: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 50px;
+    text-align: center;
+    border: 3px solid #8E44AD;
+    color: #8E44AD;
+    font-size: 19px;
+}
+
+p {
+    text-align: center;
+    color: #8E44AD;
+    font-size: 19px;
+}
+
+.wow {
+    padding-top: 20px;
+    margin: auto;
+    align-items: center;
+}
+
+#game {
+    display: block;
+}
+
+#table_record {
+    display: none;
+}
+
+#table_record td {
+    padding: 0;
+}
+
+#table_record table {
+    border-spacing: 0;
+    background-color: #8E44AD;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#top {
+    background-color: "#808080";
+    padding-top: 20px;
+    width: 900px;
+    height: 586px;
+}
+
+.buttons {
+    position: absolute;
+    margin-left: 191px;
+    margin-top: 620px;
+    margin-right: 0;
+    width: 900px;
+    height: 70px;
+    align-content: center;
+}
+
+#set {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+}

@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <title>Game</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mootools/1.6.0/mootools-core.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="new_game();">
+    <div id="main">
+        <div id="game" class="one">
+            <canvas id="canvas" width="900" height="600" onclick="pop();" ondblclick="special();" onmousemove="rotate(event)">
+            </canvas>
+        </div>
+
+        <div id="table_record" class="one">
+            <table>
+                <tr>
+                    <td>
+                        <div id="top" align="center">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="buttons">
+            <form>
+                <input type="button" id="button_one" value="Play" onclick="start_play();">
+                <input type="button" id="button_five" value="Stop" onclick="stop();">
+                <input type="button" id="button_two" value="Restart" onclick="init();">
+                <input type="button" id="button_three" value="New player" onclick="new_game();">
+                <input type="button" id="button_four" value="Records" onclick="records();">
+            </form>
+        </div>
+        <div class="two">
+            <h2>Добро пожаловать в игру!</h2>
+            <h3>Правила:</h3>
+            <ul>
+                <li>У тебя пять жизней. Если враг выходит за левую границу, то одна жизнь отнимается.</li>
+                <li>За каждое попадание начисляются баллы.</li>
+                <li>За двести баллов можно купить большую пулю, для этого надо сделать двойной клик.</li>
+                <li>Со временем скорость врагов будет увеличиваться, следовательно и сложность.</li>
+                <table class="wow">
+                    <tr>
+                        <th>
+                            <p><img src="dragon.png" width="150" height="150" class="side"></img>
+                            </p>
+                        </th>
+                        <th>
+                            <p><img src="bul.png" width="150" height="150" class="side"></img>
+                            </p>
+                        </th>
+                        <th>
+                            <p><img src="five.png" width="150" height="150" class="side"></img>
+                            </p>
+                        </th>
+                        <th>
+                            <p><img src="snake.png " width="150 " height="150 " class="side "></img>
+                            </p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>1 балл</p>
+                        </td>
+                        <td>
+                            <p>5 баллов</p>
+                        </td>
+                        <td>
+                            <p>15 баллов</p>
+                        </td>
+                        <td>
+                            <p>10 баллов</p>
+                        </td>
+                    </tr>
+                </table>
+
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
